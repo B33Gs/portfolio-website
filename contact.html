@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/style.production.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -34,34 +34,31 @@
     </div>  
   </header>
 
-  <main>
-    <div>
-      <form action="" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">E-mail: *</label>
-        <input id="contact-email" type="email" required>
-        <br>
-        <label class="standard-label" for="contact-telephone">Telephone:</label>
-        <input id="contact-telephone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-        <p>###-###-####</p>
-        <br>
-        <label class="standard-label" for="contact-message">Message: *</label>
-        <textarea name="" id="contact-message" cols="30" rows="6" maxlength="240" required></textarea>
-        <br>
-        <p>Limit 240 characters</p>
-        <br>
-        <input type="submit" value="Send Message">
-      </form>
-    </div>
-    <h1>Contact</h1>
-    <div>
-      Kevin Begin<br>
-      5605 Mary Lane Dr.<br>
-      San Diego, CA 92115<br>
-      <br> 
-      Tel +1 989 980 8812<br>
-      Skype <a href="skype:live:.cid.f910627678b072aa">live:.cid.f910627678b072aa</a><br>
-      <a href="mailto:speschk@yahoo.com">Speschk@yahoo.com</a>
-    </div>
+  <main class="contact__container">
+      <div class="contact__message">
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">E-mail: *</label>
+          <input id="contact-email" type="email" required>
+          <label class="standard-label" for="contact-telephone">Telephone: ###-###-####</label>
+          <input id="contact-telephone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+          <label class="standard-label" for="contact-message">Message: *</label>
+          <textarea name="" id="contact-message" cols="30" rows="6" maxlength="240" required></textarea>
+          <p class="contact__mesage_limit">Limit 240 characters</p>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+      <h1>Contact</h1>
+      <div class="contact__info">
+        <div>
+          Kevin Begin<br>
+          5605 Mary Lane Dr.<br>
+          San Diego, CA 92115<br>
+          <br> 
+          Tel +1 989 980 8812<br>
+          Skype <a href="skype:live:.cid.f910627678b072aa">live:.cid.f910627678b072aa</a><br>
+          <a href="mailto:speschk@yahoo.com">Speschk@yahoo.com</a>
+        </div>
+      </div>
   </main>
   
   <footer class="page-footer">

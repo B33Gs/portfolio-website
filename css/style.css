@@ -113,7 +113,8 @@ nav.page-header__item {
 body {
   background-color: rgba(244, 245, 196, 0.5);
 }
-  /* index.html page. profile image and info */
+
+/* index.html page. profile image and info */
 .profile {
   max-width: 700px;
   min-width: 320px;
@@ -153,7 +154,7 @@ body {
   }
 }
 
-  /* about.html styling */
+/* about.html styling */
 .about {
   max-width: 720px;
   min-width: 320px;
@@ -207,6 +208,33 @@ body {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* contact styling */
+.contact__container {
+  display: flex;
+  flex-direction: column;
+}
+.contact__message {
+  display: flex;
+  justify-content: center;
+}
+.contact__message form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__message form label {
+  padding-top: 10px;
+}
+.contact__mesage_limit {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.contact__container h1 {
+  margin: 50px auto 0 auto;
+}
+.contact__info {
+  display: flex;
+  justify-content: center;
+}
 /* footer styling */
 .page-footer {
   clear: both;
