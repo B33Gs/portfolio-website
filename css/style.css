@@ -214,6 +214,9 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.social-media a {
+  padding: 0 5px;
+}
 
 /* media query */
 @media all and (max-width: 500px) {
