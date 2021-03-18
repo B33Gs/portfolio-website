@@ -8,6 +8,10 @@
   --primary-color-darker: #05676e;
   --dark-teal: #489c79;
   --heading-weight: 700;
+  --header-background: #101146;
+  --header-link: #d78f11;
+  --header-link--secondary: #a0690b;
+  --header-link--tertiary: #fccd7d;
 }
 * {
   box-sizing: border-box;
@@ -34,16 +38,16 @@ h3 {
 
 /* Link and button styling */
 a {
-  color: var(--primnary-color)
+  color: var(--header-link)
 }
 a:visited {
-  color: var(--primary-color-darker);
+  color: var(--header-link);
 }
 a:hover, a:focus {
   text-decoration: none;
 }
 a:active {
-  color: var(--dark-teal);
+  color: var(--header-link--secondary);
 }
 .button, button {
   border: none;
@@ -68,9 +72,15 @@ a:active {
 
 /* header and nav styling */
 .page-header {
+  background-color: var(--header-background);
+  margin-bottom: 25px;
+}
+.header__contents {
   display: flex;
   width: 100%;
-  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .page-header__item {
   flex: 0 1 200px;
@@ -85,15 +95,24 @@ a:active {
 .navigation-list__item--active {
   text-decoration: none;
 }
+nav.page-header__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .navigation-list {
   list-style: none;
+  margin: 0;
 }
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 /*  main container styling */
+body {
+  background-color: rgba(244, 245, 196, 0.5);
+}
   /* index.html page. profile image and info */
 .profile {
   max-width: 700px;
