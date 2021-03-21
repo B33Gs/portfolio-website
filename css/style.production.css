@@ -27,7 +27,7 @@
  body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: var(--dark-grey);
+  color: var(--header-background);
   font-size: 16px;
   line-height: 1.6;
 }
@@ -63,8 +63,8 @@ a:active {
   font-family: inherit;
   font-size: 16px;
   text-decoration: none;
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: var(--header-background);
+  color: var(--header-link);
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -134,7 +134,8 @@ nav.page-header__item {
 body {
   background-color: rgba(244, 245, 196, 0.5);
 }
-  /* index.html page. profile image and info */
+
+/* index.html page. profile image and info */
 .profile {
   max-width: 700px;
   min-width: 320px;
@@ -183,7 +184,7 @@ body {
   }
 }
 
-  /* about.html styling */
+/* about.html styling */
 .about {
   max-width: 720px;
   min-width: 320px;
@@ -278,6 +279,51 @@ body {
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* contact styling */
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact__message form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__message form label {
+  padding-top: 10px;
+}
+.contact__mesage_limit {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.contact__container h1 {
+  margin: 30px auto 0 auto;
+}
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /* footer styling */
 .page-footer {
   clear: both;
@@ -289,6 +335,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+.social-media a {
+  padding: 0 5px;
 }
 
 /* media query */
