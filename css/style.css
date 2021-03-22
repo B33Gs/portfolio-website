@@ -16,8 +16,8 @@
 * {
   box-sizing: border-box;
 }
- body {
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: var(--header-background);
   font-size: 16px;
@@ -38,18 +38,20 @@ h3 {
 
 /* Link and button styling */
 a {
-  color: var(--header-link)
+  color: var(--header-link);
 }
 a:visited {
   color: var(--header-link);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 a:active {
   color: var(--header-link--secondary);
 }
-.button, button {
+.button,
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -60,13 +62,17 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
-.button:hover, button:hover, .button:focus, button:focus {
+.button:hover,
+button:hover,
+.button:focus,
+button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
-.button a, button a {
+.button a,
+button a {
   color: var(--white);
 }
 
@@ -129,12 +135,12 @@ body {
 }
 
 /* work.html styling */
-  /* start grid fallback */ 
+/* start grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
-}   /* end grid fallback */
-    
+} /* end grid fallback */
+
 @supports (display: grid) {
   .grid {
     display: grid;
@@ -173,14 +179,16 @@ body {
   width: 200px;
   margin: 0 auto;
 }
-.about__table, .about__svg {
+.about__table,
+.about__svg {
   display: flex;
   justify-content: center;
 }
 @keyframes color-change {
   from {
     fill: var(--sun-yellow);
-  } to {
+  }
+  to {
     fill: var(--sun-red);
   }
 }
@@ -190,7 +198,8 @@ body {
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
-  } to {
+  }
+  to {
     transform: translate(200px, 50px);
   }
 }
@@ -200,7 +209,8 @@ body {
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
-  } to {
+  }
+  to {
     transform: translate(100px, 48px);
   }
 }
