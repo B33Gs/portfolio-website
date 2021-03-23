@@ -38,9 +38,7 @@
   --header-link--secondary: #a0690b;
   --header-link--tertiary: #fccd7d;
 }
-*,
-*::before,
-*::after {
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
