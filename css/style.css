@@ -140,6 +140,7 @@ body {
 }
 .profile__portrait {
   width: 250px;
+  height: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
