@@ -6,19 +6,18 @@
 */
 
 :root {
-  --primary-color: #ffffe2;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b5b;
-  --white: #fff;
-  --sun-yellow: #edc655;
-  --sun-red: #f76414;
-  --grid-item-background: #7777501c;
-  --dark-teal: #489c79;
-  --heading-weight: 700;
   --header-background: #101146;
   --header-link: #d78f11;
   --header-link--secondary: #a0690b;
   --header-link--tertiary: #fccd7d;
+  --body-background: #ffffe2;
+  --grid-item-background: #7777501c;
+  --white: #fff;
+  --dark-grey: #2b2b2b5b;
+  --contact-link: #314ab9;
+  --sun-yellow: #edc655;
+  --sun-red: #f76414;
+  --heading-weight: 700;
 }
 *,
 *::before,
@@ -28,7 +27,7 @@
 }
 body {
   color: var(--header-background);
-  background-color: var(--primary-color);
+  background-color: var(--body-background);
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -60,6 +59,9 @@ a:focus {
 }
 a:active {
   color: var(--header-link--secondary);
+}
+.contact__links {
+  color: var(--contact-link);
 }
 .button,
 button {
