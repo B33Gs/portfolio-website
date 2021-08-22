@@ -4,6 +4,7 @@
   --header-link--secondary: #a0690b;
   --header-link--tertiary: #fccd7d;
   --body-background: #ffffe2;
+  --alt-text: rgb(26, 54, 90);
   --container-background: #7777501c;
   --white: #fff;
   --dark-grey: #2b2b2b5b;
@@ -20,7 +21,7 @@
 body {
   color: var(--header-background);
   background-color: var(--body-background);
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -143,17 +144,18 @@ nav.page-header__item {
 }
 
 /* work.html styling */
-.title__center {
-  display: flex;
-  justify-content: center;
-}
+
 .work-content-container {
   display: flex;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
   background-color: var(--container-background);
 }
 .work-content-container h2 {
-  text-decoration: underline !important;;
+  text-decoration: underline !important;
+}
+.work-content-container p {
+  color: var(--alt-text);
 }
 .image {
   border-radius: 5px;
@@ -162,7 +164,7 @@ nav.page-header__item {
 }
 .image-left {
   float: left;
-  
+
   margin-right: 20px;
 }
 .image-right {
@@ -308,7 +310,6 @@ nav.page-header__item {
     align-items: center;
   }
 }
-
 
 /* old grid styling for work page
 
