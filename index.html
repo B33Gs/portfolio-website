@@ -18,7 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <!-- <link rel="stylesheet" href="css/style.production.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="page-header">
@@ -55,17 +56,53 @@
     </header>
 
     <main>
-      <div class="profile">
-        <img
-          class="profile__portrait"
-          src="img/portfolio-pic.jpg"
-          alt="picture of me in a bluegreen shirt"
-        />
+      <div class="main-content">
+        <div class="elevator-pitch">
+          <p>
+            Skilled Javascript full stack developer experienced in creating
+            responsive and interactive web applications.
+          </p>
+        </div>
         <div>
-          <h1>Hello World</h1>
-          <p>My name is Kevin Begin.</p>
-          <p>I'm a <span>web</span> developer from California</p>
-          <a class="button" href="#">Check out some of my code</a>
+          <h1>Work</h1>
+        </div>
+        <div class="content-container flex-col">
+          <div class="project-container">
+            <div class="project-modal">
+              <a href="movie-craze.html">Details</a>
+            </div>
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./img/meet-app-image.jpg"
+                alt="image of ipad with movie app"
+              />
+            </div>
+            <div class="project-description">
+              <p>
+                Meet is a serverless React app that allows users to see events,
+                event details and filter by city.
+              </p>
+            </div>
+          </div>
+          <div class="project-container">
+            <div class="project-modal">
+              <a href="movie-craze.html">Details</a>
+            </div>
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./img/movie-craze-img.jpg"
+                alt="image of ipad with movie app"
+              />
+            </div>
+            <div class="project-description">
+              <p>
+                Movie Craze is a full stack React app that allows users to see a
+                list of movies, movie details, and edit user info.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
