@@ -6,11 +6,9 @@
   --body-background: #ffffe2;
   --alt-text: rgb(26, 54, 90);
   --container-background: #7777501c;
+  --shadow: #5252372f;
   --white: #fff;
-  --dark-grey: #2b2b2b5b;
   --contact-link: #314ab9;
-  --sun-yellow: #edc655;
-  --sun-red: #f76414;
   --heading-weight: 700;
 }
 *,
@@ -142,6 +140,7 @@ nav.page-header__item {
 .content-container {
   display: flex;
   justify-content: center;
+  border-radius: 5px;
 }
 .heading-container {
   display: flex;
@@ -156,12 +155,12 @@ nav.page-header__item {
 .container-background {
   background-color: var(--container-background);
 }
+.shadow {
+  box-shadow: 3px 3px 2px var(--shadow);
+}
 
 /* index.html page. profile image and info */
-/* .elevator-pitch {
-  display: flex;
-  justify-content: center;
-} */
+
 .elevator-pitch p {
   text-align: center;
   font-size: 25px;
@@ -237,19 +236,15 @@ nav.page-header__item {
 /* about.html styling */
 
 /* contact styling */
-.contact-container {
+
+.contact-message {
+  display: block;
+}
+.contact-message form {
   display: flex;
   flex-direction: column;
 }
-.contact__message {
-  display: flex;
-  justify-content: center;
-}
-.contact__message form {
-  display: flex;
-  flex-direction: column;
-}
-.contact__message form label {
+.contact-message form label {
   padding-top: 10px;
 }
 .contact__mesage_limit {

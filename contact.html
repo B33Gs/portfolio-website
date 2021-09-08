@@ -18,7 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.production.css" /> -->
   </head>
 
   <body>
@@ -55,9 +56,18 @@
       </div>
     </header>
 
-    <main class="contact-container">
-      <h1>Message Me</h1>
-      <div class="contact__message">
+    <main class="main-content flex-col">
+      <div class="heading-container">
+        <h1>Message Me</h1>
+      </div>
+      <div
+        class="
+          content-container
+          contact-message
+          shadow
+          container-background container-padding
+        "
+      >
         <form action="#" method="post" id="contact-form">
           <label class="standard-label" for="contact-email">E-mail: *</label>
           <input id="contact-email" type="email" required />
@@ -81,16 +91,6 @@
           <p class="contact__mesage_limit">Limit 240 characters</p>
           <input class="button" type="submit" value="Send Message" />
         </form>
-      </div>
-      <h1>Contact Info</h1>
-      <div class="contact__info">
-        <div>
-          Kevin Begin<br />
-          Fenton, MI 48430<br />
-          <a class="contact__links" href="skype:live:.cid.f910627678b072aa"
-            >Skype</a
-          >
-        </div>
       </div>
     </main>
 

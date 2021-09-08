@@ -11,9 +11,8 @@
   --header-link--secondary: #a0690b;
   --header-link--tertiary: #fccd7d;
   --body-background: #ffffe2;
-  --grid-item-background: #7777501c;
   --white: #fff;
-  --dark-grey: #2b2b2b5b;
+  --shadow: #2b2b2b5b;
   --contact-link: #314ab9;
   --sun-yellow: #edc655;
   --sun-red: #f76414;
@@ -315,7 +314,7 @@ nav.page-header__item {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.contact__message {
+.contact-message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +322,7 @@ nav.page-header__item {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.contact__message form {
+.contact-message form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +331,7 @@ nav.page-header__item {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.contact__message form label {
+.contact-message form label {
   padding-top: 10px;
 }
 .contact__mesage_limit {
