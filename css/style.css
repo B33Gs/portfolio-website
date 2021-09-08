@@ -264,10 +264,6 @@ nav.page-header__item {
 }
 
 /* media query */
-@media all and (max-width: 500px) {
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-}
 @media all and (max-width: 750px) {
   .project-container {
     flex-direction: column;
