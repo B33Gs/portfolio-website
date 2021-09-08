@@ -306,7 +306,7 @@ nav.page-header__item {
 }
 
 /* contact styling */
-.contact__container {
+.contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +339,7 @@ nav.page-header__item {
   padding: 0 0 10px 0;
   margin: 0;
 }
-.contact__container h1 {
+.contact-container h1 {
   margin: 30px auto 0 auto;
 }
 .contact__info {
