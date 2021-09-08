@@ -143,30 +143,36 @@ nav.page-header__item {
   display: flex;
   justify-content: center;
 }
-/* index.html page. profile image and info */
-.elevator-pitch p {
-  font-size: 25px;
-  font-weight: bold;
-}
-.profile {
-  max-width: 700px;
-  min-width: 320px;
-  margin: 0 auto;
+.heading-container {
   display: flex;
   justify-content: center;
 }
-.profile__portrait {
-  width: 250px;
-  height: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+.container-padding {
+  padding: 0 20px 20px 20px;
 }
+.flex-col {
+  flex-direction: column;
+}
+.container-background {
+  background-color: var(--container-background);
+}
+
+/* index.html page. profile image and info */
+/* .elevator-pitch {
+  display: flex;
+  justify-content: center;
+} */
+.elevator-pitch p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .project-container {
   display: flex;
   position: relative;
   margin: 10px 0;
   border-radius: 5px;
-  background-color: var(--container-background);
 }
 .project-modal {
   display: flex;
@@ -184,9 +190,7 @@ nav.page-header__item {
 .project-modal:hover {
   opacity: 100%;
 }
-.flex-col {
-  flex-direction: column;
-}
+
 .project-image-container {
   display: flex;
   align-items: center;
@@ -201,13 +205,11 @@ nav.page-header__item {
   align-items: center;
 }
 
-/* work.html styling */
+/* movie-craze.html styling */
 
 .work-content-container {
   display: flex;
-  padding: 0 20px 20px 20px;
   border-radius: 5px;
-  background-color: var(--container-background);
 }
 .work-content-container h2 {
   text-decoration: underline !important;
@@ -231,58 +233,6 @@ nav.page-header__item {
 }
 
 /* about.html styling */
-
-.about__about {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.about__about ul {
-  list-style: none;
-  padding: 0;
-}
-.about__about a {
-  width: 200px;
-  margin: 0 auto;
-}
-.about__table,
-.about__svg {
-  display: flex;
-  justify-content: center;
-}
-@keyframes color-change {
-  from {
-    fill: var(--sun-yellow);
-  }
-  to {
-    fill: var(--sun-red);
-  }
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /* contact styling */
 .contact__container {
