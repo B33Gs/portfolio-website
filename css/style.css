@@ -194,13 +194,15 @@ nav.page-header__item {
 .project-image-container {
   display: flex;
   align-items: center;
+  width: 40%;
 }
 .project-image {
-  height: 200px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
 }
 .project-description {
   display: flex;
+  width: 60%;
   margin: 20px;
   align-items: center;
 }
@@ -285,6 +287,20 @@ nav.page-header__item {
   }
 }
 @media all and (max-width: 750px) {
+  .project-container {
+    flex-direction: column;
+    position: relative;
+  }
+  .project-description {
+    text-align: center;
+    width: 90%;
+  }
+  .project-image-container {
+    width: 100%;
+  }
+  .project-image {
+    border-radius: 5px 5px 0 0;
+  }
   .grid {
     grid-gap: 10px;
   }
@@ -318,31 +334,3 @@ nav.page-header__item {
     align-items: center;
   }
 }
-
-/* old grid styling for work page
-
-/* start grid fallback 
-.grid__item {
-  display: inline-block;
-  width: 33%;
-} /* end grid fallback */
-/*
-@supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-  .grid__item {
-    background-color: var(--grid-item-background);
-    padding: 15px;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    box-shadow: 2px 2px 5px var(--dark-grey);
-    border-radius: 5px;
-  }
-  /* .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-  } */
