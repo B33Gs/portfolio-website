@@ -138,7 +138,7 @@ nav.page-header__item {
 }
 
 /*  main container styling */
-.main__content {
+.main-content {
   max-width: 720px;
   min-width: 320px;
   margin: 0 auto;
@@ -163,21 +163,6 @@ nav.page-header__item {
   margin-right: 40px;
   border-radius: 50%;
 }
-
-/* work.html styling */
-.title__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-/* start grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-} /* end grid fallback */
 
 @supports (display: grid) {
   .grid {
@@ -334,7 +319,7 @@ nav.page-header__item {
 .contact-message form label {
   padding-top: 10px;
 }
-.contact__mesage_limit {
+.contact-mesage_limit {
   padding: 0 0 10px 0;
   margin: 0;
 }
