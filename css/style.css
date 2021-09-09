@@ -6,7 +6,8 @@
   --body-background: #ffffe2;
   --alt-text: rgb(26, 54, 90);
   --container-background: #7777501c;
-  --shadow: #5252372f;
+  --container-shadow: #5252372f;
+  --button-shadow: #1011464d;
   --white: #fff;
   --contact-link: #314ab9;
   --heading-weight: 700;
@@ -61,10 +62,11 @@ button {
   text-decoration: none;
   background-color: var(--header-background);
   color: var(--header-link);
-  padding: 10px;
+  padding: 3px 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: opacity 0.2s;
+  box-shadow: 1px 1px 1px var(--button-shadow);
 }
 .button:hover,
 button:hover,
@@ -153,8 +155,8 @@ nav.page-header__item {
 .container-background {
   background-color: var(--container-background);
 }
-.shadow {
-  box-shadow: 3px 3px 2px var(--shadow);
+.container-shadow {
+  box-shadow: 3px 3px 2px var(--container-shadow);
 }
 
 /* index.html page. profile image and info */
@@ -202,6 +204,9 @@ nav.page-header__item {
   width: 60%;
   margin: 20px;
   align-items: center;
+}
+.project-details-link {
+  display: none;
 }
 
 /* movie-craze.html styling */
@@ -273,11 +278,17 @@ nav.page-header__item {
     text-align: center;
     width: 90%;
   }
+  .project-details-link {
+    display: block;
+  }
   .project-image-container {
     width: 100%;
   }
   .project-image {
     border-radius: 5px 5px 0 0;
+  }
+  .project-modal:hover {
+    display: none;
   }
 
   h1 {
