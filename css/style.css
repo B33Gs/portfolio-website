@@ -133,7 +133,7 @@ nav.page-header__item {
   margin: 0 auto;
   padding: 0 10px;
 }
-.main-content div {
+.contact-format-helper div {
   display: flex;
   justify-content: center;
 }
@@ -237,7 +237,10 @@ nav.page-header__item {
 }
 
 /* about.html styling */
-
+.skills-container {
+  display: flex;
+  justify-content: center;
+}
 /* contact styling */
 
 .contact-message {
