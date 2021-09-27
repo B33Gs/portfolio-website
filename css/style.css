@@ -241,8 +241,8 @@ nav.page-header__item {
   display: flex;
   justify-content: center;
 }
-/* contact styling */
 
+/* contact styling */
 .contact-message {
   display: block;
 }
@@ -269,6 +269,9 @@ nav.page-header__item {
 }
 .social-media a {
   padding: 0 5px;
+}
+.error-text {
+  display: none;
 }
 
 /* media query */
