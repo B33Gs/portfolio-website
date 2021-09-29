@@ -34,7 +34,9 @@ function handleFormValidation() {
 }
 form.addEventListener('submit', function (event) {
   handleFormValidation();
-  event.preventDefault();
+  if (valErrors) {
+    event.preventDefault();
+  }
 });
 
 setErrorFor = (input, message) => {

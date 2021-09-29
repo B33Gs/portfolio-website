@@ -18,8 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <!-- <link rel="stylesheet" href="css/style.production.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.production.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <script defer src="./js/contactValidation.js"></script>
   </head>
 
@@ -68,19 +68,23 @@
           container-shadow container-background container-padding
         "
       >
-        <form action="#" method="post" id="contact-form">
+        <form
+          action="https://formspree.io/f/xdoyjkro"
+          method="POST"
+          id="contact-form"
+        >
           <label class="standard-label" for="contact-email">E-mail: *</label>
-          <input id="contact-email" />
+          <input id="contact-email" name="email:" />
           <span class="errors"></span>
           <label class="standard-label" for="contact-telephone"
             >Telephone: ###-###-####</label
           >
-          <input id="contact-telephone" type="tel" />
+          <input id="contact-telephone" type="tel" name="phone:" />
           <span class="errors"></span>
           <label class="standard-label" for="contact-message">Message: *</label>
           <textarea
-            name="contact-message"
             id="contact-message"
+            name="message:"
             cols="30"
             rows="6"
             maxlength="240"
