@@ -20,6 +20,7 @@
     />
     <!-- <link rel="stylesheet" href="css/style.production.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/contactValidation.js"></script>
   </head>
 
   <body>
@@ -69,15 +70,13 @@
       >
         <form action="#" method="post" id="contact-form">
           <label class="standard-label" for="contact-email">E-mail: *</label>
-          <input id="contact-email" type="email" required />
+          <input id="contact-email" />
+          <span class="errors"></span>
           <label class="standard-label" for="contact-telephone"
             >Telephone: ###-###-####</label
           >
-          <input
-            id="contact-telephone"
-            type="tel"
-            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-          />
+          <input id="contact-telephone" type="tel" />
+          <span class="errors"></span>
           <label class="standard-label" for="contact-message">Message: *</label>
           <textarea
             name="contact-message"
@@ -85,10 +84,15 @@
             cols="30"
             rows="6"
             maxlength="240"
-            required
           ></textarea>
+          <span class="errors"></span>
           <p class="contact-mesage_limit">Limit 240 characters</p>
-          <input class="button" type="submit" value="Send Message" />
+          <input
+            class="button"
+            id="submit"
+            type="submit"
+            value="Send Message"
+          />
         </form>
       </div>
     </main>
@@ -106,6 +110,7 @@
         /></a>
       </div>
     </footer>
+
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>

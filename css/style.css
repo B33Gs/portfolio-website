@@ -243,6 +243,17 @@ nav.page-header__item {
 }
 
 /* contact styling */
+.input-error {
+  border: 1px solid red;
+}
+.input-success {
+  border: 1px solid green;
+}
+.errors {
+  color: var(--alt-text);
+  font-style: italic;
+  font-size: 12px;
+}
 .contact-message {
   display: block;
 }
