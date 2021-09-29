@@ -3,10 +3,12 @@ const submit = document.getElementById('submit');
 const email = document.getElementById('contact-email');
 const telephone = document.getElementById('contact-telephone');
 const message = document.getElementById('contact-message');
+let valErrors = false;
 
 function handleFormValidation() {
   const validPhone = /\d{3}\-\d{3}\-\d{4}/g;
   const validEmail = /\S+@\S+\.\S+/g;
+  valErrors = false;
   //  email validation
   if (!email.value) {
     setErrorFor(email, 'Email is required.');
@@ -39,6 +41,7 @@ setErrorFor = (input, message) => {
   const span = input.nextElementSibling;
   input.className = 'input-error';
   span.innerText = message;
+  valErrors = true;
 };
 setSuccessFor = (input, message) => {
   const span = input.nextElementSibling;
