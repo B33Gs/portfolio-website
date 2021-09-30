@@ -241,6 +241,9 @@ nav.page-header__item {
   display: flex;
   justify-content: center;
 }
+.skills-container ul li {
+  margin: 0 20px;
+}
 
 /* contact styling */
 .input-error {

@@ -295,6 +295,9 @@ nav.page-header__item {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.skills-container ul li {
+  margin: 0 20px;
+}
 
 /* contact styling */
 .input-error {
