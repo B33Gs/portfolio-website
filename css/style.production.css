@@ -374,6 +374,7 @@ nav.page-header__item {
   .project-image {
     border-radius: 5px 5px 0 0;
   }
+  .project-modal,
   .project-modal:hover {
     display: none;
   }
