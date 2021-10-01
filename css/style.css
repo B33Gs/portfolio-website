@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --header-background: #101146;
   --header-link: #d78f11;
   --header-link--secondary: #a0690b;
@@ -11,11 +11,27 @@
   --white: #fff;
   --contact-link: #314ab9;
   --heading-weight: 700;
+} */
+:root {
+  --header-background: #333330;
+  --header-link: #c2ddb9;
+  --header-link--secondary: #a0690b;
+  --header-link--tertiary: #fccd7d;
+  --body-background: #ffffff;
+  --alt-text: rgb(26, 54, 90);
+  --container-background: #f3f8f1;
+  --container-shadow: #5252372f;
+  --button-shadow: #1011464d;
+  --white: #fff;
+  --contact-link: #314ab9;
+  --heading-weight: 700;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 body {
   color: var(--header-background);
@@ -81,20 +97,45 @@ button a {
 }
 
 /* header and nav styling */
+/* #logo {
+  width: 200px;
+  height: 70px;
+}
+*/
 .page-header {
   background-color: var(--header-background);
   margin-bottom: 25px;
 }
+.page-header__item div {
+  display: flex;
+  justify-content: center;
+}
 .header-contents {
   display: flex;
-  width: 100%;
+  width: 80%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
-#logo {
-  width: 200px;
-  height: 70px;
+
+.header-contents div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-header__item h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 40px;
+  color: var(--header-link);
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.page-header__item p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .page-header__item:last-child {
   flex-grow: 1;
@@ -315,16 +356,6 @@ nav.page-header__item {
   h1 {
     font-size: 22px;
   }
-}
-@media all and (max-width: 600px) {
-  nav.page-header__item {
-    font-size: 14px;
-  }
-  .navigation-list li {
-    margin-left: 6px;
-  }
-}
-@media all and (max-width: 500px) {
   header {
     height: 130px;
   }
@@ -333,8 +364,27 @@ nav.page-header__item {
     align-items: center;
     height: 100%;
   }
+
+  .header-contents div h1 {
+    margin-top: 0;
+  }
+  nav.page-header__item {
+    font-size: 14px;
+  }
+
+  .navigation-list li {
+    margin-left: 6px;
+  }
+}
+@media all and (max-width: 600px) {
+}
+@media all and (max-width: 500px) {
   .profile {
     flex-direction: column;
     align-items: center;
+  }
+  .image-left,
+  .image-right {
+    display: none;
   }
 }
