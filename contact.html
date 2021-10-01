@@ -72,12 +72,21 @@
           id="contact-form"
         >
           <label class="standard-label" for="contact-email">E-mail: *</label>
-          <input id="contact-email" name="email:" />
+          <input
+            id="contact-email"
+            name="email:"
+            placeholder="example@email.com"
+          />
           <span class="errors"></span>
           <label class="standard-label" for="contact-telephone"
-            >Telephone: ###-###-####</label
-          >
-          <input id="contact-telephone" type="tel" name="phone:" />
+            >Telephone: *
+          </label>
+          <input
+            id="contact-telephone"
+            type="tel"
+            name="phone:"
+            placeholder="###-###-####"
+          />
           <span class="errors"></span>
           <label class="standard-label" for="contact-message">Message: *</label>
           <textarea
@@ -86,9 +95,10 @@
             cols="30"
             rows="6"
             maxlength="240"
+            placeholder="Limit 240 characters"
           ></textarea>
           <span class="errors"></span>
-          <p class="contact-mesage_limit">Limit 240 characters</p>
+          <!-- <p class="contact-mesage_limit">Limit 240 characters</p> -->
           <input
             class="button"
             id="submit"
