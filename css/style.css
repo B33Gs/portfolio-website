@@ -1,17 +1,3 @@
-/* :root {
-  --header-background: #101146;
-  --header-link: #d78f11;
-  --header-link--secondary: #a0690b;
-  --header-link--tertiary: #fccd7d;
-  --body-background: #ffffe2;
-  --alt-text: rgb(26, 54, 90);
-  --container-background: #7777501c;
-  --container-shadow: #5252372f;
-  --button-shadow: #1011464d;
-  --white: #fff;
-  --contact-link: #314ab9;
-  --heading-weight: 700;
-} */
 :root {
   --header-background: #333330;
   --header-link: #c2ddb9;
