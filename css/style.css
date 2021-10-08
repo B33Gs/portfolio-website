@@ -83,11 +83,7 @@ button a {
 }
 
 /* header and nav styling */
-/* #logo {
-  width: 200px;
-  height: 70px;
-}
-*/
+
 .page-header {
   background-color: var(--header-background);
   margin-bottom: 25px;
@@ -109,6 +105,15 @@ button a {
   flex-direction: column;
   align-items: center;
 }
+nav.page-header__item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
 .page-header__item h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 40px;
@@ -116,24 +121,11 @@ button a {
   margin-top: 5px;
   margin-bottom: 0;
 }
-.page-header__item p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: var(--white);
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-.navigation-list__item--active {
-  text-decoration: none;
-}
-nav.page-header__item {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.job-title {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px !important;
+  color: var(--white) !important;
+  margin: 0 0 14px 0;
 }
 .navigation-list {
   list-style: none;
@@ -143,6 +135,22 @@ nav.page-header__item {
 .navigation-list li {
   display: inline-block;
   margin-left: 12px;
+  padding: 4px 12px;
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: 2px;
+}
+.navigation-list li:hover {
+  display: inline-block;
+  margin-left: 12px;
+  color: var(--header-background);
+  background-color: var(--header-link);
+}
+.navigation-list a {
+  text-decoration: none;
+}
+.navigation-list p {
+  margin: 0;
+  font-size: 18px !important;
 }
 
 /*  main container styling */
