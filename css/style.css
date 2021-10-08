@@ -88,50 +88,49 @@ button a {
   background-color: var(--header-background);
   margin-bottom: 25px;
 }
-.page-header__item div {
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-}
 .header-contents {
   display: flex;
+  justify-content: space-between;
   width: 80%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
 }
-
-.header-contents div {
+.header-title-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 0 0 10px;
 }
-nav.page-header__item {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-.page-header__item h1 {
+.header-title-container h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 40px;
   color: var(--header-link);
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 0;
 }
 .job-title {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 14px !important;
   color: var(--white) !important;
-  margin: 0 0 14px 0;
+  margin: auto;
 }
-.navigation-list {
+
+.header-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.navigation-list,
+.social-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.social-list {
+  /* margin-top: 10px; */
 }
 .navigation-list li {
   display: inline-block;
@@ -152,6 +151,23 @@ nav.page-header__item {
 .navigation-list p {
   margin: 0;
   font-size: 18px !important;
+}
+.social-list a {
+  text-decoration: none;
+}
+.social-list li {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid var(--header-background);
+  transition: border 0.2s;
+}
+.social-list li:hover {
+  border: 1px solid var(--white);
+}
+.social-list p {
+  color: var(--white);
+  font-size: 14px;
+  margin: 3px 7px;
 }
 
 /*  main container styling */
@@ -325,9 +341,7 @@ nav.page-header__item {
   flex-direction: column;
   text-align: center;
 }
-.social-media a {
-  padding: 0 5px;
-}
+
 .error-text {
   display: none;
 }
