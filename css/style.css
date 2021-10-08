@@ -91,6 +91,7 @@ button a {
 .page-header__item div {
   display: flex;
   justify-content: center;
+  align-items: space-around;
 }
 .header-contents {
   display: flex;
@@ -135,7 +136,7 @@ nav.page-header__item {
 .navigation-list li {
   display: inline-block;
   margin-left: 12px;
-  padding: 4px 12px;
+  padding: 0 12px;
   transition: background-color 0.4s, color 0.4s;
   border-radius: 2px;
 }
@@ -274,8 +275,14 @@ nav.page-header__item {
   display: flex;
   justify-content: center;
 }
+.skills-container ul {
+  height: 300px;
+  column-count: 3;
+}
 .skills-container ul li {
   margin: 0 20px;
+  list-style: circle;
+  width: 30%;
 }
 
 /* contact styling */
@@ -306,6 +313,10 @@ nav.page-header__item {
 }
 .contact-container h1 {
   margin: 30px auto 0 auto;
+}
+.send-message-button {
+  margin-top: 5px;
+  width: 80px;
 }
 /* footer styling */
 .page-footer {
@@ -363,13 +374,14 @@ nav.page-header__item {
   nav.page-header__item {
     font-size: 14px;
   }
-
   .navigation-list li {
     margin-left: 6px;
   }
+  .skills-container ul {
+    column-count: 2;
+  }
 }
-@media all and (max-width: 600px) {
-}
+
 @media all and (max-width: 500px) {
   .profile {
     flex-direction: column;
@@ -378,5 +390,11 @@ nav.page-header__item {
   .image-left,
   .image-right {
     display: none;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .header-contents {
+    max-width: 1000px;
   }
 }
