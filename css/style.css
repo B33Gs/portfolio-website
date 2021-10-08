@@ -374,7 +374,7 @@ button a {
     font-size: 22px;
   }
   header {
-    height: 130px;
+    height: 180px;
   }
   .header-contents {
     flex-direction: column;
