@@ -206,9 +206,13 @@ nav.page-header__item {
   width: 100%;
   top: 0;
   left: 0;
+  transition: opacity 0.2s;
 }
 .project-modal:hover {
   opacity: 100%;
+}
+.project-modal-text {
+  font-size: 20px;
 }
 
 .project-image-container {
