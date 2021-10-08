@@ -147,12 +147,6 @@ nav.page-header__item {
 
 /*  main container styling */
 .main-content {
-  max-width: 720px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-.main-content {
   width: 80%;
   justify-content: center;
   max-width: 720px;
